@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.max_width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.padding-container {
+  @apply px-6 lg:px-20;
+}
+
+.content-container {
+  @apply py-20 lg:py-32;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  @apply py-3 px-4 outline-none font-medium rounded-lg text-base flex items-center justify-center text-nowrap hover:cursor-pointer;
+}
+
+.family-bg {
+  @apply absolute bg-yellow-300 right-0 w-[70%] bg-[url('/family.png')] h-full bg-cover;
+}
+
+.textShadow {
+  text-shadow: 2px 4px 4px rgba(18, 18, 18, 0.4);
+}
+
+.whiteContainer {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  box-shadow: -1px 2px 12px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: -1px 2px 12px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -1px 2px 12px 3px rgba(0, 0, 0, 0.1);
+  @apply bg-white p-10 rounded-lg flex;
+}
+
+.plans_container {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+}
