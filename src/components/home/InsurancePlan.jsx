@@ -1,27 +1,23 @@
 import React from "react";
 import { insurance_plans } from "../../constants";
+import Title from "../Title";
 
 const InsurancePlan = () => {
   return (
     <div className="bg-customColor padding-container content-container">
       <div className="max_width w-full flex flex-col gap-20">
-        <div className="flex flex-col mx-auto items-center gap-3">
-          <p className=" text-primary text-lg font-semibold">
-            EXTENSIVE INSURANCE PLANS
-          </p>
-          <p
-            className="text-primary text-center text-5xl poppins font-semibold max-w-[500px] leading-tight
-          "
-          >
-            Diverse <span className="text-secondary">insurance</span> plans for
-            your needs
-          </p>
-
-          <p className=" text-black/50 text-lg font-medium max-w-[500px] text-center">
-            Access a wide array of insurance plans tailored to fit your unique
-            requirements seamlessly.
-          </p>
-        </div>
+        <Title
+          title="EXTENSIVE INSURANCE PLANS"
+          tagline={
+            <p className={`taglineText max-w-[500px]`}>
+              Diverse <span className="text-secondary">insurance</span> plans
+              for your needs
+            </p>
+          }
+          subtitle=" Access a wide array of insurance plans tailored to fit your unique
+        requirements seamlessly."
+          width={500}
+        />
 
         <div className=" columns-1 md:columns-2 gap-10 m-auto">
           {insurance_plans.map((plan, i) => (

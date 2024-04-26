@@ -40,6 +40,10 @@
   text-shadow: 2px 4px 4px rgba(18, 18, 18, 0.4);
 }
 
+.taglineText {
+  @apply text-primary text-center text-5xl poppins font-semibold leading-tight;
+}
+
 .whiteContainer {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
